@@ -1,4 +1,14 @@
-body{
-    background-color: lightsalmon;
+body
+{
+    background-color: deepskyblue;
+}
+
+h1
+{
     text-align: center;
+}
+
+p
+{
+    font-size: 20px;
 }
