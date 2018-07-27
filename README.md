@@ -1,3 +1,2 @@
-# amirnaghibi.com
-DevOps project with CI/CD Pipeline    
-My portfolio website.
+# amirnaghibi    
+My portfolio website showcasing my personal projects and work experiences.
