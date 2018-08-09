@@ -14,4 +14,4 @@ while True:
         send_mail.send_registration_email()
     #print(soup.find_all('strong'))
     print(soup.find_all('strong')[4].get_text())
-    sleep(60)
+    sleep(30)
