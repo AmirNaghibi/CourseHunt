@@ -10,10 +10,10 @@ import datetime
     Course Number
     Section Number
 '''
-course_name = input("enter course name: ")
-course_name = course_name.upper()
-course_number = input("enter course number: ")
-section_number = input("enter course section (ex. 008) ")
+course_name     = input("enter course name: ")
+course_name     = course_name.upper()
+course_number   = input("enter course number: ")
+section_number  = input("enter course section (ex. 008) ")
 
 course_info_link = "https://courses.students.ubc.ca/cs/main?pname=subjarea&tname=subjareas&req=5&dept="+course_name+"&course="+course_number+"&section="+section_number
 page = requests.get(course_info_link)
