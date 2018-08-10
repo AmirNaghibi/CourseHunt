@@ -28,4 +28,4 @@ while True:
         exit()
     #print(soup.find_all('strong'))
     print(str(datetime.datetime.now())+" "+"number of general seats available: "+soup.find_all('strong')[4].get_text())
-    sleep(3)
+    sleep(30)
