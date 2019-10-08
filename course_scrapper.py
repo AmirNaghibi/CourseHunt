@@ -21,11 +21,13 @@ page = requests.get(course_info_link)
 soup = BeautifulSoup(page.content, 'html.parser')
 
 #print(soup.prettify())
-while True:
-    if soup.find_all('strong')[4].get_text()!='0':
-        send_mail.send_registration_email()
-        print("SUCCESS!!\n")
-        exit()
-    #print(soup.find_all('strong'))
-    print(str(datetime.datetime.now())+" "+"number of general seats available: "+soup.find_all('strong')[4].get_text())
-    sleep(30)
+sleep(2)
+print("\nSUCCESS!!\n")
+print(str(datetime.datetime.now())+" "+"number of general seats available: "+soup.find_all('strong')[3].get_text())
+print("")
+# sleep(5)
+# while True:
+#     if soup.find_all('strong')[3].get_text()!='0':
+#         # send_mail.send_registration_email()
+#         print(str(datetime.datetime.now())+" "+"number of general seats available: "+soup.find_all('strong')[3].get_text())
+#         sleep(10)
